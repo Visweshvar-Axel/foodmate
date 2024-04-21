@@ -62,3 +62,43 @@ Your branch is up to date with 'origin/main'.
 
 D:\UST\GIT GITHUB\workspace\foodmate>git rebase product
 Successfully rebased and updated refs/heads/main.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git commit -a -m "cmd rebase"
+[main 600a11e] cmd rebase
+ 1 file changed, 64 insertions(+)
+
+D:\UST\GIT GITHUB\workspace\foodmate>git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.04 KiB | 1.04 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Visweshvar-Axel/foodmate.git
+   a4de2fc..600a11e  main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch
+  filter
+  header
+* main
+  product
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch -d filter
+warning: deleting branch 'filter' that has been merged to
+         'refs/remotes/origin/filter', but not yet merged to HEAD.
+Deleted branch filter (was 63c31e3).
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch -D filter
+error: branch 'filter' not found.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch -d product
+Deleted branch product (was 932215b).
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch -d header
+Deleted branch header (was d28576f).
+
+D:\UST\GIT GITHUB\workspace\foodmate>git push origin --delete product
+To https://github.com/Visweshvar-Axel/foodmate.git
+ - [deleted]         product
