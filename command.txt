@@ -1,0 +1,127 @@
+D:\UST\GIT GITHUB\workspace\foodmate>git git status
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+D:\UST\GIT GITHUB\workspace\foodmate>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+D:\UST\GIT GITHUB\workspace\foodmate>git add .
+
+D:\UST\GIT GITHUB\workspace\foodmate>git commit -m "initial commit"
+[master (root-commit) 598ba95] initial commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch
+* master
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch -M main
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch
+* main
+
+D:\UST\GIT GITHUB\workspace\foodmate>git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git remote add origin https://github.com/Visweshvar-Axel/foodmate.git
+
+D:\UST\GIT GITHUB\workspace\foodmate>git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 393 bytes | 393.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Visweshvar-Axel/foodmate.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\UST\GIT GITHUB\workspace\foodmate>git commit -a -m "index update"
+[main 1446c47] index update
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\UST\GIT GITHUB\workspace\foodmate>git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 325 bytes | 325.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Visweshvar-Axel/foodmate.git
+   598ba95..1446c47  main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        adbot.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\UST\GIT GITHUB\workspace\foodmate>git commit -a -m "index update"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        adbot.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\UST\GIT GITHUB\workspace\foodmate>add .
+'add' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git add .
+
+D:\UST\GIT GITHUB\workspace\foodmate>git commit -m "about update"
+[main 3863a1b] about update
+ 1 file changed, 11 insertions(+)
+ create mode 100644 adbot.html
+
+D:\UST\GIT GITHUB\workspace\foodmate>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 442 bytes | 442.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Visweshvar-Axel/foodmate.git
+   1446c47..3863a1b  main -> main
+branch 'main' set up to track 'origin/main'.
+
