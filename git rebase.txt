@@ -1,0 +1,64 @@
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch
+* (no branch, rebasing product)
+  filter
+  header
+  main
+  product
+
+D:\UST\GIT GITHUB\workspace\foodmate>git rebase --abort
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch
+  filter
+  header
+  main
+* product
+
+D:\UST\GIT GITHUB\workspace\foodmate>git rebase main
+dropping 63c31e3cd87272e246ba8407ff1b999ef2c9e1dd +filer -- patch contents already upstream
+Auto-merging product.html
+CONFLICT (add/add): Merge conflict in product.html
+error: could not apply fcb9dc0... +product
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply fcb9dc0... +product
+
+D:\UST\GIT GITHUB\workspace\foodmate>git rebase --continue
+index.html: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+
+D:\UST\GIT GITHUB\workspace\foodmate>git rebase --continue
+fatal: No rebase in progress?
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch
+  filter
+  header
+  main
+* product
+
+D:\UST\GIT GITHUB\workspace\foodmate>git log --oneline
+932215b (HEAD -> product) product header
+7da1e8e +product
+bef115a +filer
+a4de2fc (origin/main, main) main index
+c9ef00e merge conflect update
+836b178 Merge branch 'header'
+d28576f (origin/header, header) index 50%off
+389cb7a index buynow
+8b9d189 Merge branch 'header' of https://github.com/Visweshvar-Axel/foodmate
+da28868 merge conflict
+f070704 header update
+ea1767a cmd update
+3863a1b about update
+1446c47 index update
+598ba95 initial commit
+
+D:\UST\GIT GITHUB\workspace\foodmate>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git rebase product
+Successfully rebased and updated refs/heads/main.
