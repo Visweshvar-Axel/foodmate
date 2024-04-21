@@ -37,3 +37,58 @@ D:\UST\GIT GITHUB\workspace\foodmate>git branch -v
 D:\UST\GIT GITHUB\workspace\foodmate>git branch -r
   origin/header
   origin/main
+
+
+
+D:\UST\GIT GITHUB\workspace\foodmate>git commit -a -m "index buynow"
+[main 389cb7a] index buynow
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\UST\GIT GITHUB\workspace\foodmate>git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Visweshvar-Axel/foodmate.git
+   8b9d189..389cb7a  main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git checkout header
+Switched to branch 'header'
+Your branch is up to date with 'origin/header'.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git commit -a -m "index 50%off"
+[header d28576f] index 50%off
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\UST\GIT GITHUB\workspace\foodmate>git push -u origin header
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Visweshvar-Axel/foodmate.git
+   f070704..d28576f  header -> header
+branch 'header' set up to track 'origin/header'.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git log --oneline
+d28576f (HEAD -> header, origin/header) index 50%off
+f070704 header update
+ea1767a cmd update
+3863a1b about update
+1446c47 index update
+598ba95 initial commit
+
+D:\UST\GIT GITHUB\workspace\foodmate>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git merge header
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
