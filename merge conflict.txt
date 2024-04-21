@@ -1,0 +1,39 @@
+D:\UST\GIT GITHUB\workspace\foodmate>git branch
+* main
+
+D:\UST\GIT GITHUB\workspace\foodmate>git checkout -b header
+Switched to a new branch 'header'
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch
+* header
+  main
+
+D:\UST\GIT GITHUB\workspace\foodmate>git add .
+
+D:\UST\GIT GITHUB\workspace\foodmate>git commit -m "header update"
+[header f070704] header update
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\UST\GIT GITHUB\workspace\foodmate>git push -u origin header
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 387 bytes | 387.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'header' on GitHub by visiting:
+remote:      https://github.com/Visweshvar-Axel/foodmate/pull/new/header
+remote:
+To https://github.com/Visweshvar-Axel/foodmate.git
+ * [new branch]      header -> header
+branch 'header' set up to track 'origin/header'.
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch -v
+* header f070704 header update
+  main   ea1767a cmd update
+
+D:\UST\GIT GITHUB\workspace\foodmate>git branch -r
+  origin/header
+  origin/main
